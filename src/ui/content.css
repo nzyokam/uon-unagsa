@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+  
+  .article-title {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .article-author {
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .article-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .article-content {
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    padding: 15px;
+  }
+
+  .centered-content {
+    text-align: center;
+  }
+
+@media (min-width: 1440px) {
+    .article-title{
+        font-size: 50px;
+    }
+    .article-content{
+        font-size: 25px;
+    }
+}

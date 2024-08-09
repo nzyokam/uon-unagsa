@@ -1,0 +1,49 @@
+.cards {
+    box-sizing: border-box;
+    width: 400px;
+    height: auto;
+    background: rgba(33, 33, 33, 0.58);
+    border: 1px solid rgba(177, 176, 176, 0.96);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .cards:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cards:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  
+  .work {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    padding: 10px;
+    transition: transform 0.4s ease-in-out;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .work.show {
+    transform: translateX(0);
+    display: flex;
+    justify-content: center;
+  }
+  
+  
