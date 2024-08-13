@@ -11,3 +11,81 @@ body {
   color: rgba(177, 176, 176, 0.96);
   background-color: black;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure it's on top of everything */
+}
+
+.cards {
+  width: 450px; /* Enlarged width */
+  height: 120px; /* Enlarged height */
+  border-radius: 12px; /* Slightly more rounded */
+  box-sizing: border-box;
+  padding: 20px 25px; /* Adjusted padding for larger box */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  position: relative; /* Positioned relative to the overlay */
+  z-index: 1000; /* Ensure it's above the overlay */
+}
+
+
+.icon-container {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04e40048;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  color: #269b24;
+}
+
+.message-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.message-text,
+.sub-text {
+  margin: 0;
+  cursor: default;
+}
+
+.message-text {
+  color: #269b24;
+  font-size: 20px; /* Larger font size */
+  font-weight: 700;
+}
+
+.sub-text {
+  font-size: 16px; /* Slightly larger font size */
+  color: #555;
+}
+
+.cross-icon {
+  width: 20px;
+  height: 20px;
+  color: #555;
+  cursor: pointer;
+}
