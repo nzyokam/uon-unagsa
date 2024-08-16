@@ -37,13 +37,14 @@ const Magazine = () => {
           </h1>
         </div>
 
-        <div className="flex flex-wrap gap-10 lg:gap-20 justify-center">
+        <div className="flex flex-wrap justify-center gap-10 lg:gap-20">
           {articles.map((article, index) => (
             <div
-              className="cards flex flex-wrap"
+              className="cardss flex flex-wrap"
               key={index}
               onClick={() => showFullArticle(index)}
             >
+              
               <div
                 className="relative mx-4 -mt-7 overflow-hidden rounded-xl shadow-lg 
               shadow-blue-gray-500/40 bg-center"
@@ -113,6 +114,7 @@ const Magazine = () => {
             </div>
           </div>
         )}
+    
       </div>
     </motion.div>
   );

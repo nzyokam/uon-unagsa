@@ -27,7 +27,7 @@ export const Landing = () => {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="mt-0 mb-0 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+            className="mt-0 mb-0 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-normal text-transparent md:text-7xl"
           >
             Welcome to the <br />
             <span className="text-yellow">
@@ -57,6 +57,17 @@ export const Landing = () => {
                   <br /> the further exploration of human diversity and gender.
                 </em>
               </p>
+              <p className="text-white mb-4">
+                If you have any questions, you can
+              </p>
+              <button
+                className="emailbtn"
+                onClick={() =>
+                  (window.location.href = "mailto:uonasa2023@gmail.com")
+                }
+              >
+                Email Us
+              </button>
             </div>
           </motion.h1>
         </LampContainer>
@@ -100,6 +111,15 @@ export const Landing = () => {
               <br /> the further exploration of human diversity and gender.
             </em>
           </p>
+          <p className="text-white mb-4">Want to collaborate?</p>
+          <button
+            className="emailbtn"
+            onClick={() =>
+              (window.location.href = "mailto:uonasa2023@gmail.com")
+            }
+          >
+            Email Us
+          </button>
         </div>
       </div>
 
